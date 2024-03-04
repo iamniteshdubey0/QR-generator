@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-1: #f5f4eb;
+    --color-2: #ef476f;
+    --color-3: #ffd166;
+    --color-4: #06d6a0;
+    --color-5: #073b4c;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background-color: var(--color-4);
+    height: 100svh;
+    width: 100%;
+}
+
+.wrapper .qr-box{
+    width: 45%;
+    background-color: var(--color-1);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgb(214, 214, 214);
+}
+
+.qr-box .qr-input {
+    width: 100%;
+    padding: 10px;
+}
+
+.qr-input .input-field{
+    margin:10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.input-field input[type="text"]{
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--color-5);
+}
+
+.input-field input[type="text"]:hover, .input-field input[type="text"]:focus{
+    border: 1px solid var(--color-4);
+    outline: none;
+    
+}
+
+.btn {
+    padding: 7px 20px;
+    border-radius: 4px;
+    border: none;
+    background: var(--color-4);
+    color: var(--color-1);
+    border: 1px solid var(--color-4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px 0px rgb(214, 214, 214);
+    border: 1px solid var(--color-4);
+    background-color: transparent;
+    color: var(--color-4);
+}
+
+.qr-box .qr-result {
+    width: 100%;
+    padding: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.qr-result.show-img {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
